@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import Box from "./Box";
 
 const SectionWrap = styled.section`
   position: absolute;
@@ -22,14 +23,7 @@ function Section() {
   return (
     <SectionWrap>
       {Items.map((data, idx) => (
-        <article key={idx}>
-          <h2>{data.title}</h2>
-          <video src={`${process.env.PUBLIC_URL}/img/${data.vid}`} autoPlay loop muted></video>
-
-          <div></div>
-          <h3>{data.title}</h3>
-          <p>{data.txt}</p>
-        </article>
+        <Box key={idx}></Box>
       ))}
     </SectionWrap>
   );
