@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 import Header from './components/Header';
+import Section from './components/Section';
 import Sns from './components/Sns';
 import GlobalStyle from './GlobalStyle';
 
-const Wrapper = styled.article`
+const Wrapper = styled.main`
 	position: fixed;
 	width: 100%;
 	height: 100%;
@@ -19,6 +20,7 @@ function App() {
 			<Wrapper bg={process.env.PUBLIC_URL + '/img/bg.jpg'}>
 				<Header />
 				<Sns />
+				<Section />
 			</Wrapper>
 		</>
 	);
