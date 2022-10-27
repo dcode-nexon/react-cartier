@@ -1,6 +1,5 @@
-//npm i styled-components
-
 import styled from 'styled-components';
+import Header from './components/Header';
 
 const Wrapper = styled.article`
 	position: fixed;
@@ -14,7 +13,9 @@ const Wrapper = styled.article`
 function App() {
 	return (
 		<>
-			<Wrapper bg={process.env.PUBLIC_URL + '/img/bg.jpg'}></Wrapper>
+			<Wrapper bg={process.env.PUBLIC_URL + '/img/bg.jpg'}>
+				<Header />
+			</Wrapper>
 		</>
 	);
 }
