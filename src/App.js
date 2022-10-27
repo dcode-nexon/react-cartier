@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Header from './components/Header';
+import Sns from './components/Sns';
 import GlobalStyle from './GlobalStyle';
 
 const Wrapper = styled.article`
@@ -17,6 +18,7 @@ function App() {
 			<GlobalStyle />
 			<Wrapper bg={process.env.PUBLIC_URL + '/img/bg.jpg'}>
 				<Header />
+				<Sns />
 			</Wrapper>
 		</>
 	);
