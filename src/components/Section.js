@@ -25,6 +25,11 @@ function Section() {
       {Items.map((data, idx) => (
         <Box key={idx}>
           <h2>{data.title}</h2>
+          <video src={`${process.env.PUBLIC_URL}/img/${data.vid}`}></video>
+
+          <div></div>
+          <h3>{data.title}</h3>
+          <p>{data.txt}</p>
         </Box>
       ))}
     </SectionWrap>
