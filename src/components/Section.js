@@ -23,7 +23,9 @@ function Section() {
   return (
     <SectionWrap>
       {Items.map((data, idx) => (
-        <Box key={idx}></Box>
+        <Box key={idx}>
+          <h2>{data.title}</h2>
+        </Box>
       ))}
     </SectionWrap>
   );

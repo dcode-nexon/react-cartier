@@ -10,10 +10,10 @@ const BoxWrap = styled.article`
   background: url(${(props) => props.bg}) no-repeat left center;
 `
 
-function Box() {
+function Box({ children }) {
   return (
     <BoxWrap bg={process.env.PUBLIC_URL + '/img/divider.png'}>
-
+      {children}
     </BoxWrap>
   );
 }
