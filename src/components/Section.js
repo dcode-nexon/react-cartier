@@ -8,7 +8,7 @@ const SectionWrap = styled.section`
   right: 0;
   width: 100%;
   height: 100%;
-`
+`;
 
 function Section() {
   const [Items, setItems] = useState([]);
@@ -22,7 +22,14 @@ function Section() {
   return (
     <SectionWrap>
       {Items.map((data, idx) => (
-        <article key={idx}></article>
+        <article key={idx}>
+          <h2>{data.title}</h2>
+          <video src={`${process.env.PUBLIC_URL}/img/${data.vid}`} autoPlay loop muted></video>
+
+          <div></div>
+          <h3>{data.title}</h3>
+          <p>{data.txt}</p>
+        </article>
       ))}
     </SectionWrap>
   );
