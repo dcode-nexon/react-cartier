@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Header from './components/Header';
+import GlobalStyle from './GlobalStyle';
 
 const Wrapper = styled.article`
 	position: fixed;
@@ -13,6 +14,7 @@ const Wrapper = styled.article`
 function App() {
 	return (
 		<>
+			<GlobalStyle />
 			<Wrapper bg={process.env.PUBLIC_URL + '/img/bg.jpg'}>
 				<Header />
 			</Wrapper>

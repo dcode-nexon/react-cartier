@@ -29,8 +29,7 @@ const HeaderWrapper = styled.header`
       color: #999;
     }
   }
-`
-
+`;
 function Header() {
   return (
     <HeaderWrapper>
